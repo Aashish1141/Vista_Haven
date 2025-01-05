@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vista Haven - Airbnb</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://images.pexels.com/photos/1054218/pexels-photo-1054218.jpeg');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+        header {
+            background-color: rgba(44, 62, 80, 0.7);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .description {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            color: #2c3e50;
+        }
+        .description h2 {
+            color: #2c3e50;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        .feature {
+            background-color: #ecf0f1;
+            padding: 15px;
+            border-radius: 8px;
+            width: 200px;
+            text-align: center;
+            color: #2c3e50;
+        }
+        footer {
+            background-color: rgba(44, 62, 80, 0.7);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            width: 100%;
+            margin-top: 50px;
+        }
+        .contact {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .contact p {
+            margin: 5px 0;
+        }
+        .contact a {
+            color: #f39c12; /* Changed the email color for better visibility */
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contact a:hover {
+            color: #e67e22; /* Hover effect for the email link */
+        }
+        .booking-btn {
+            position: fixed;
+            bottom: 100px; /* Adjusted the button to be above the footer */
+            right: 20px;
+            padding: 15px 25px;
+            background-color: #e74c3c;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .booking-btn:hover {
+            background-color: #c0392b;
+        }
+        .spacer {
+            height: 100px;
+        }
+
+        /* Mobile responsive design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            .description {
+                padding: 15px;
+            }
+
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .feature {
+                width: 80%; /* Allow features to take up most of the width on small screens */
+                margin-bottom: 15px;
+            }
+
+            .booking-btn {
+                font-size: 14px;
+                padding: 10px 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 24px; /* Adjust header font size on very small screens */
+            }
+
+            .description h2 {
+                font-size: 22px; /* Smaller title size on small screens */
+            }
+
+            .feature {
+                width: 90%; /* Make features full width on the smallest screens */
+            }
+
+            .contact p {
+                font-size: 14px; /* Adjust font size of contact info */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Vista Haven</h1>
+    <p>Your peaceful mountain retreat</p>
+</header>
+
+<div class="container">
+    <div class="description">
+        <h2>Vista Haven</h2>
+        <p>Discover the perfect getaway at Vista Haven, where the mountain views are breathtaking and the atmosphere is cozy and welcoming. Whether you’re looking for a romantic escape or just a peaceful retreat, our space is designed with comfort in mind.</p>
+    </div>
+
+    <div class="features">
+        <div class="feature">
+            <h3>Mountain View</h3>
+            <p>Enjoy stunning views of the mountains right from the comfort of your room.</p>
+        </div>
+        <div class="feature">
+            <h3>Cozy Interior</h3>
+            <p>Feel at home with a warm and inviting interior that makes you relax instantly.</p>
+        </div>
+        <div class="feature">
+            <h3>WiFi</h3>
+            <p>Stay connected with high-speed internet throughout your stay.</p>
+        </div>
+        <div class="feature">
+            <h3>Kitchen</h3>
+            <p>Fully equipped kitchen to prepare your favorite meals.</p>
+        </div>
+        <div class="feature">
+            <h3>Fireplace</h3>
+            <p>Cozy up by the fireplace and enjoy the warmth of a perfect evening.</p>
+        </div>
+        <div class="feature">
+            <h3>For Couples</h3>
+            <p>Designed for a romantic getaway with your special someone.</p>
+        </div>
+    </div>
+
+    <div class="contact">
+        <p><strong>Contact us:</strong></p>
+        <p>Phone: 9817151860</p>
+        <p>Phone: 6230941833</p>
+        <p>Email: <a href="mailto:vivekanshi2@gmail.com">vivekanshi2@gmail.com</a></p>
+    </div>
+</div>
+
+<button class="booking-btn" onclick="window.location.href='mailto:vivekanshi2@gmail.com'">Book Now</button>
+
+<div class="spacer"></div>
+
+<footer>
+    <p>&copy; 2025 Vista Haven - All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
